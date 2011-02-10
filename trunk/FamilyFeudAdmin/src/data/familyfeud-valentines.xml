@@ -1,0 +1,145 @@
+<familyfeud>
+	
+	<question value="Besides a gift, name something that you give someone on their birthday">
+        <answer score="46" value="Card" />
+        <answer score="19" value="Kiss" />
+        <answer score="15" value="Cake" />
+        <answer score="6" value="Party" />
+        <answer score="3" value="Hug" />
+		<answer score="3" value="Spanking" />
+		<answer score="2" value="Call" />
+    </question>
+    
+    <question value="Double: Name something women might leave lipstick marks on">
+        <answer score="46" value="Face" />
+        <answer score="42" value="Letter" />
+        <answer score="34" value="Collar" />
+        <answer score="30" value="Cup" />
+        <answer score="28" value="Straw" />
+        <answer score="24" value="Pillow" />
+    </question>
+	
+	<question value="Name something women find hard to resist">
+        <answer score="27" value="Shopping" />
+        <answer score="20" value="Candy" />
+        <answer score="17" value="Men" />
+        <answer score="13" value="Jewelry" />
+        <answer score="10" value="Clothes" />
+		<answer score="2" value="Gossip" />
+		<answer score="2" value="Money" />
+    </question>
+	
+	<question value="Double: Name something that melts easily">
+        <answer score="72" value="Butter" />
+        <answer score="58" value="Ice Cream" />
+        <answer score="28" value="Ice" />
+        <answer score="16" value="Cheese" />
+        <answer score="16" value="Chocolate" />
+		<answer score="6" value="Snow" />
+		<answer score="4" value="Wax" />
+    </question>
+
+	<question value="Name a popular Valentine card company">
+        <answer score="92" value="Hallmark" />
+        <answer score="6" value="American Greetings" />
+        <answer score="2" value="Carlton" />
+    </question>
+
+	<question value="Double:Name a kind of candy that comes in different colors">
+        <answer score="46" value="Lifesavers" />
+        <answer score="46" value="M and Ms" />
+        <answer score="36" value="Taffy" />
+        <answer score="18" value="Jellybeans" />
+        <answer score="14" value="Lollipops" />
+		<answer score="6" value="Mints" />
+		<answer score="6" value="Skittles" />
+		<answer score="6" value="Starburst" />
+    </question>
+    
+	<question value="Name one saying on a Valentine heart candy">
+        <answer score="43" value="Be Mine" />
+        <answer score="33" value="I Love/Luv You" />
+        <answer score="14" value="Kiss Me" />
+        <answer score="4" value="Hug Me" />
+		<answer score="4" value="Love Me" />
+		<answer score="2" value="Sweet Talk" />
+    </question>
+	
+	<question value="Double: Besides candy name something that might have a chocolate covering">
+        <answer score="46" value="Cake" />
+        <answer score="40" value="Ice Cream" />
+        <answer score="28" value="Cookies" />
+        <answer score="22" value="Nuts" />
+        <answer score="18" value="Raisins" />
+		<answer score="14" value="Pretzels" />
+		<answer score="10" value="Cherries" />
+		<answer score="8" value="Donuts" />
+    </question>
+
+	<question value="Name a popular Valentines gift">
+        <answer score="36" value="Chocolate" />
+        <answer score="23" value="Candy" />
+        <answer score="20" value="Roses" />
+        <answer score="13" value="Flowers" />
+        <answer score="4" value="Teddy Bear" />
+		<answer score="2" value="Jewelry" />
+		<answer score="2" value="Perfume" />
+    </question>
+
+	<question value="Besides Darling, name a popular term of endearment">
+        <answer score="51" value="Honey" />
+        <answer score="25" value="Sweetheart" />
+        <answer score="13" value="Sweetie" />
+        <answer score="5" value="Dear" />
+        <answer score="4" value="Love" />
+		<answer score="2" value="Baby" />
+    </question>
+
+	<question value="Name a Chapter in the For the Strength of Youth pamphlet">
+        <answer score="45" value="Music and Entertainment" />
+        <answer score="36" value="Sexual Purity" />
+        <answer score="11" value="Dating" />
+    </question>
+
+	<question value="Other than red, what color of roses are commonly sent on Valentines Day">
+        <answer score="60" value="Pink" />
+        <answer score="25" value="White" />
+        <answer score="13" value="Yellow" />
+        <answer score="2" value="Purple" />
+    </question>
+
+	<question value="Name a popular chocolate manufacturer">
+        <answer score="67" value="Hershey" />
+        <answer score="27" value="Nestle" />
+        <answer score="5" value="Godiva" />
+        <answer score="1" value="Andes" />
+    </question>
+
+	<question value="What is the most romantic language">
+        <answer score="67" value="French" />
+        <answer score="27" value="Italian" />
+        <answer score="5" value="Spanish" />
+        <answer score="1" value="English" />
+    </question>
+
+	<question value="Name the best place to go on a Valentines date">
+        <answer score="67" value="Dinner/Restaurant" />
+        <answer score="27" value="Movie/Theater" />
+        <answer score="5" value="Picnic" />
+        <answer score="1" value="YW/YM Activity" />
+    </question>
+            	
+	<question value="Triple: Name a temple you would like to be married in.">
+        <answer score="105" value="Salt Lake" />
+        <answer score="42" value="Logan" />
+        <answer score="34" value="St. George" />
+		<answer score="29" value="San Diego" />
+		<answer score="26" value="Washington DC" />
+		<answer score="26" value="Oakland" />
+		<answer score="20" value="London" />
+		<answer score="18" value="Hawaii" />
+    </question>
+    
+</familyfeud> 
+	
+	

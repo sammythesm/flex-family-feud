@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:ffc="components.*"
+	initialize="init()" >
+	
+	<mx:Script>
+		<![CDATA[
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			import mx.controls.Alert;
+			import mx.collections.XMLListCollection;
+			
+			private var m_xGameData:XML;
+			private var m_nQuestionIndex:int = 0;
+			private var m_hsvr:HTTPService = new HTTPService;
+			[Bindable] private var m_nTotalQuestions:int = 0;
+			[Bindable] private var m_nTotalScore:int = 0;
+			[Bindable] private var m_xcAnswers:XMLListCollection = new XMLListCollection;
+			
+			private function init() : void {
+				initHttpService();
+				sendHttpRequest();
+			}
+			
+			
+			private function moveToNextQuestion( bForward_:Boolean = true ):void {
+				if( 0 == m_xGameData.length() ) return;
+				
+				if( bForward_ )
+					m_nQuestionIndex++;
+				else
+					m_nQuestionIndex--;
+					
+				if( 0 > m_nQuestionIndex )
+					m_nQuestionIndex = 0;
+				
+				var xlist:XMLList = m_xGameData.*;
+				if( xlist.length() <= m_nQuestionIndex	)
+					m_nQuestionIndex = xlist.length() - 1;
+					
+				setQuestion( m_nQuestionIndex );
+				
+			}
+			
+			private function initHttpService() : void {
+				m_hsvr.contentType  = HTTPService.CONTENT_TYPE_XML;
+				m_hsvr.resultFormat = "e4x";
+				m_hsvr.addEventListener( ResultEvent.RESULT, httpServiceResultHandler );
+				m_hsvr.addEventListener( FaultEvent.FAULT, httpServiceFaultHandler );
+			}
+			
+			private function sendHttpRequest( ):void {
+				m_hsvr.method = "get";
+				m_hsvr.url = "data/familyfeud-valentines.xml";
+				m_hsvr.send();
+			}
+			
+			private function httpServiceResultHandler( event:ResultEvent ) : void {
+				m_xGameData = event.result as XML;
+				m_nTotalQuestions = m_xGameData.*.length();
+				setQuestion( m_nQuestionIndex );
+			}
+			
+			private function setQuestion( nIndex_:int ) : void {
+				this.m_nTotalScore = 0;
+				txtQuestion.text = 	Number(nIndex_+1).toString() + ") " + m_xGameData.question[nIndex_].@value;
+				if( 0 != m_xcAnswers.length )
+					m_xcAnswers.removeAll();
+				
+				var xlist:XMLList = m_xGameData.question[nIndex_].answer;
+				for each( var xml:XML in xlist ){
+					m_xcAnswers.addItem( xml.copy() );
+					m_nTotalScore += Number(xml.@score);
+				}
+			}
+			
+			private function httpServiceFaultHandler( event:FaultEvent ) : void {
+				var errors:String = "Some errors occurred \n";
+				errors += "\n Fault Code is: \n"     + event.fault.faultCode;
+				errors += "\n Fault Detail is: \n "  + event.fault.faultDetail;
+				errors += "\n Fault String is : \n " + event.fault.faultString;
+				Alert.show( errors );
+			}
+			
+			
+			
+			private function loadScore( strScore_:String ):String {
+				this.m_nTotalScore += Number(strScore_ );
+				return strScore_;
+			}
+			
+			
+			[Embed(source="assets/images/Familyfeudlogo2007sm.png")]
+            [Bindable] public var clsImage:Class;
+			
+			
+		]]>
+	</mx:Script>
+	
+	<mx:Style source="/assets/style.css" />
+	
+	<mx:Canvas id="cvsMain" width="800" height="600" backgroundColor="Yellow" >
+		<mx:VBox horizontalAlign="center" width="100%">
+			<mx:Image source="{clsImage}"  scaleContent="true"  />
+			<mx:Text id="txtQuestion" styleName="Question" width="80%" height="56" />
+			<mx:Tile id="tileAnswerBoard" width="644" height="150" direction="vertical" borderStyle="outset" 
+				horizontalGap="20" verticalGap="5" 
+		        paddingLeft="10" paddingTop="10" paddingBottom="10" paddingRight="10"  visible="true">
+				<mx:Repeater id="r" count="8" dataProvider="{m_xcAnswers}">
+					<mx:HBox width="300" >
+						<mx:Text width="30" text="{r.currentIndex + 1})" styleName="Answer"/>
+						<mx:Text width="215" text="{r.currentItem.@value}" styleName="Answer" maxHeight="20"/>
+						<mx:Text width="35" text="{ r.currentItem.@score }" styleName="Answer" />
+					</mx:HBox>
+				</mx:Repeater>
+			</mx:Tile>
+			<mx:Spacer />
+			
+			<mx:HBox >
+				<mx:VBox horizontalAlign="center" >
+					<mx:Label text="Total Questions" />
+					<mx:Canvas backgroundColor="black" width="40" height="20" >
+						<mx:Text  id="txtTotQues" width="100%" height="100%" text="{m_nTotalQuestions}" textAlign="center" color="white"  />
+					</mx:Canvas>
+				</mx:VBox>
+			</mx:HBox>
+			
+			<mx:VBox horizontalAlign="center" >
+				<mx:Label text="Score" />
+				<mx:Canvas backgroundColor="black" width="140" height="75" >
+					<mx:Text  id="txtScore" width="100%" height="100%" text="{m_nTotalScore}" textAlign="center" fontSize="54" color="white"  />
+				</mx:Canvas>
+			</mx:VBox>
+			
+			<mx:HBox horizontalAlign="center" >
+				<mx:Button label="Back" click="{moveToNextQuestion( false )}" />
+				<mx:Button label="Next" click="{moveToNextQuestion()}" />
+			</mx:HBox>
+		</mx:VBox>
+		
+	</mx:Canvas>
+</mx:Application>
+
