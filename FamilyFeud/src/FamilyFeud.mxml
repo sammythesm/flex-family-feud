@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:ffc="components.*"
+	initialize="init()"
+	backgroundColor="#c07500"
+	horizontalAlign="center"
+	verticalAlign="top"
+	paddingTop="0"
+	paddingLeft="0"
+	paddingRight="0"
+	paddingBottom="0"
+	creationComplete="cc()"
+ >
+	
+	<mx:Script>
+		<![CDATA[
+			import flash.events.KeyboardEvent;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			import mx.controls.Alert;
+			import mx.collections.XMLListCollection;
+			import components.*;
+			
+			public function addToScore( nScore_:int ) :void {
+				var nScore:Number = Number(scMain.txtScoreBoard.text) + nScore_;
+				if( 0 > nScore )
+					nScore = 0;
+				scMain.txtScoreBoard.text = nScore.toString();	
+			}
+			
+			
+			private var m_xGameData:XML;
+			private var m_nQuestionIndex:int = 0;
+			[Bindable] private var m_nStrikes:int = 0;
+			private var m_hsvr:HTTPService = new HTTPService;
+			[Bindable] private var m_xcAnswers:XMLListCollection = new XMLListCollection;
+			
+			private function init() : void {
+				initHttpService();
+				sendHttpRequest();
+				resetScore();
+			}
+			
+			
+			private function resetScore():void {
+				scFam1.txtScoreBoard.text = "0";
+				scFam2.txtScoreBoard.text = "0";
+				scMain.txtScoreBoard.text = "0";
+			}
+			
+			
+			private function moveToFamily( sbFam:ScoreBoard ):void {
+				var nMainScore:Number = Number(scMain.txtScoreBoard.text);
+				var nFamScore:Number = Number(sbFam.txtScoreBoard.text) + nMainScore;
+				sbFam.txtScoreBoard.text = nFamScore.toString();
+				scMain.txtScoreBoard.text = "0";
+			}
+			
+			
+			
+			private function moveToNextQuestion( bForward_:Boolean = true ):void {
+				if( bForward_ )
+					m_nQuestionIndex++;
+				else
+					m_nQuestionIndex--;
+					
+				if( 0 > m_nQuestionIndex )
+					m_nQuestionIndex = 0;
+				
+				var xlist:XMLList = m_xGameData.*;
+				if( xlist.length() <= m_nQuestionIndex	)
+					m_nQuestionIndex = xlist.length() - 1;
+				scMain.txtScoreBoard.text = "0";
+				this.m_nStrikes = 0;	
+				this.setQuestion( m_nQuestionIndex );
+			}
+			
+			private function initHttpService() : void {
+				m_hsvr.contentType  = HTTPService.CONTENT_TYPE_XML;
+				m_hsvr.resultFormat = "e4x";
+				m_hsvr.addEventListener( ResultEvent.RESULT, httpServiceResultHandler );
+				m_hsvr.addEventListener( FaultEvent.FAULT, httpServiceFaultHandler );
+			}
+			
+			private function sendHttpRequest( ):void {
+				m_hsvr.method = "get";
+				//m_hsvr.url = "data/familyfeud.xml";
+				m_hsvr.url = "data/familyfeud-valentines.xml";
+				m_hsvr.send();
+			}
+			
+			private function httpServiceResultHandler( event:ResultEvent ) : void {
+				m_xGameData = event.result as XML;
+				m_nQuestionIndex = 0;
+				setQuestion( m_nQuestionIndex );
+			}
+			
+			private function setQuestion( nIndex_:int ) : void {
+				txtQuestion.text = 	m_xGameData.question[nIndex_].@value;
+				if( 0 != m_xcAnswers.length )
+					m_xcAnswers.removeAll();
+				
+				var xlist:XMLList = m_xGameData.question[nIndex_].answer;
+				for each( var xml:XML in xlist ){
+					m_xcAnswers.addItem( xml.copy() );
+				}
+			}
+			
+			private function anotherStrike( ) : void {
+				m_nStrikes++;
+				if( m_nStrikes > 3 ) {
+					m_nStrikes = 3;
+					return;
+				}
+				Strikes.showStrikes( cvsMain, m_nStrikes );
+				playStrike();
+			}
+			
+			private function httpServiceFaultHandler( event:FaultEvent ) : void {
+				var errors:String = "Some errors occurred \n";
+				errors += "\n Fault Code is: \n"     + event.fault.faultCode;
+				errors += "\n Fault Detail is: \n "  + event.fault.faultDetail;
+				errors += "\n Fault String is : \n " + event.fault.faultString;
+				Alert.show( errors );
+			}
+			
+			[Embed(source="assets/sounds/ff-clang.mp3")]
+        	[Bindable]
+        	public var clsClang:Class;
+        	
+        	[Embed(source="assets/sounds/ff-strike.mp3")]
+        	[Bindable]
+        	public var clsStrike:Class;
+
+			
+			private var snClang:Sound = new clsClang() as Sound;
+			private var snStrike:Sound = new clsStrike() as Sound;
+		
+			public function playClang():void{
+				snClang.play();
+			}
+
+			public function playStrike():void{
+				snStrike.play();
+			}
+			
+			[Embed(source="assets/images/Familyfeudlogo2007sm.png")]
+            [Bindable] public var clsImage:Class;
+			
+			[Bindable]
+            private var dp:Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+			
+    private function cc():void{
+     this.addEventListener(MouseEvent.CLICK, clickHandler);
+     this.addEventListener(KeyboardEvent.KEY_DOWN,keyPressed);
+    }
+    private function clickHandler(event:MouseEvent):void {
+      stage.focus = this;
+    }
+    private function keyPressed(evt:KeyboardEvent):void{
+    	trace(evt.keyCode + 'pressed');
+    	if (evt.keyCode == 88)
+    	{
+    		//s key is strike
+    		trace('strike!');
+    		anotherStrike();
+		}
+		if (evt.keyCode == 67)
+		{
+			//c key clears strikes
+			trace('clear strikes');
+			m_nStrikes = 0;
+		}
+		if (evt.keyCode == 87)
+		{
+			//w key is wrong answer (shows one strike and plays sound)
+			trace('wrong answer');
+			m_nStrikes = 0;
+			anotherStrike();
+			m_nStrikes = 0;
+		}
+    	if (evt.keyCode == 49)
+    		trace('reveal answer 1');
+    	if (evt.keyCode == 50)
+    		trace('reveal answer 2');
+    	if (evt.keyCode == 51)
+    		trace('reveal answer 3');
+    	if (evt.keyCode == 52)
+    		trace('reveal answer 4');
+    	if (evt.keyCode == 53)
+    		trace('reveal answer 5');
+    	if (evt.keyCode == 54)
+    		trace('reveal answer 6');
+    	if (evt.keyCode == 55)
+    		trace('reveal answer 7');
+    	if (evt.keyCode == 56)
+    		trace('reveal answer 8');
+	}
+   			
+		]]>
+	</mx:Script>
+	<mx:Style source="/assets/style.css" />
+	<mx:Image source="assets/images/family-feud-backdrop.png" includeInLayout="false" />
+		
+	<mx:Canvas id="cvsMain" width="960" height="629">
+		
+		<ffc:ScoreBoard id="scFam1" x="22" y="283" width="125" height="48" />	
+		<ffc:ScoreBoardMain id="scMain" x="405" y="104" width="148" height="48" />	
+		<ffc:ScoreBoard id="scFam2" x="814" y="283" width="125" height="48" />	
+		<mx:Box width="630" height="91"  x="164" y="177" verticalAlign="middle" horizontalAlign="center" fontWeight="bold" >
+			<mx:Text id="txtQuestion" styleName="Question" textAlign="center" width="100%" />
+		</mx:Box>
+		<mx:Tile id="tileAnswerBoard" width="630" height="140" direction="vertical" 
+			horizontalGap="2" verticalGap="5" visible="true" x="164" y="280" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0">
+			<mx:Repeater id="r" count="8" dataProvider="{m_xcAnswers}">
+				<ffc:Answer answer="{r.currentItem}" number="{r.currentIndex+1}"/>
+			</mx:Repeater>
+		</mx:Tile>
+		<mx:HBox horizontalAlign="center" 
+		borderThickness="1" borderColor="red" borderStyle="solid"  x="366.5" y="520">
+			<mx:Button label="&lt;--" click="{moveToFamily(scFam1)}" />
+			<mx:Button label="Reset"  click="{scMain.txtScoreBoard.text = '0'}" />
+			<mx:Button label="New" click="{resetScore()}" />
+			<mx:Button label="--&gt;" click="{moveToFamily(scFam2)}" />
+		</mx:HBox>
+		<mx:HBox horizontalAlign="center" 
+		borderThickness="1" borderColor="red" borderStyle="solid"  x="321" y="552">
+			<mx:Button label="Back" click="{moveToNextQuestion( false )}" />
+			<mx:Button label="X" click="{anotherStrike()}" />
+			<mx:Label text="Strikes:" fontSize="12" />
+			<mx:Canvas borderStyle="inset" >
+				<mx:Text id="txtStrikes" text="{m_nStrikes}" width="15" textAlign="center"/>	
+			</mx:Canvas>
+			<mx:Button label="Clear" click="{m_nStrikes = 0}" />
+			<mx:Button label="Next" click="{moveToNextQuestion()}" />
+		</mx:HBox>
+		
+	</mx:Canvas>
+</mx:Application>

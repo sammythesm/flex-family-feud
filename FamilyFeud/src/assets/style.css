@@ -1,0 +1,29 @@
+/* CSS file */
+.Question { 
+    fontSize: 20;
+    color: Black;
+    text-align:left;
+}
+
+.Answer {
+	fontSize: 14;
+	font-weight:bold;
+	vertical-align: top;
+}
+
+.ScoreBoard {
+	fontSize: 36;
+	color: White;
+	background-color: Black;
+	vetical-align: middle;
+	text-align: center;
+}
+
+
+.ScoreBoardMain {
+	fontSize: 36;
+	color: White;
+	background-color: Black;
+	vetical-align: middle;
+	text-align: center;
+}

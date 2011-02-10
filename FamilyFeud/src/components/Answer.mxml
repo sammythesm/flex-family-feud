@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="cc()">
+	<mx:Script>
+		<![CDATA[
+			import mx.messaging.channels.StreamingAMFChannel;
+			import flash.events.KeyboardEvent;
+			
+			public function reveal(event:KeyboardEvent):void {
+				trace('open this one');
+				onButtonClick();
+			}
+			
+			private function onButtonClick() : void {
+				cvsCover.visible  = cvsCover.visible?false:true; 
+				txtAnswer.visible = !cvsCover.visible;
+				txtScore.visible  = !cvsCover.visible;
+				
+				var nScore:Number = Number(txtScore.text);
+				if( !txtScore.visible ){
+					nScore = nScore * -1;
+				}
+				else{
+					this.parentApplication.playClang();
+				}
+				this.parentApplication.addToScore( int(nScore) );
+			}
+			
+			
+			public function get answer() :XML {
+				var xml:XML = <answer score={txtScore.text} value={txtAnswer.text} />;
+				return xml;
+			}
+			
+			public function set answer( xml_:XML ) :void {
+				txtAnswer.text = xml_.@value;
+				txtScore.text = xml_.@score;	
+			}
+			
+ 			public function get number() :String {
+				var str:String = txtNumber.text.substring(1, txtNumber.text.length-2);
+				return str;
+			} 
+			
+			public function set number( strNumber_:String ) :void {
+				//txtNumber.text = "[" + strNumber_ + "]";
+				//btnToggle.label = "[" + strNumber_ + "]";
+				flippyText.text = strNumber_ ;
+			}
+			
+    private function cc():void{
+     //this.addEventListener(MouseEvent.CLICK, clickHandler);
+     this.addEventListener(KeyboardEvent.KEY_DOWN,keyPressed);
+    }
+    private function clickHandler(event:MouseEvent):void {
+     // stage.focus = this;
+    }
+    private function keyPressed(evt:KeyboardEvent):void{
+    	trace(evt.keyCode + 'comp pressed');
+
+    	if (evt.keyCode == 49)
+    		trace('reveal answer 1');
+    	if (evt.keyCode == 50)
+    		trace('reveal answer 2');
+    	if (evt.keyCode == 51)
+    		trace('reveal answer 3');
+    	if (evt.keyCode == 52)
+    		trace('reveal answer 4');
+    	if (evt.keyCode == 53)
+    		trace('reveal answer 5');
+    	if (evt.keyCode == 54)
+    		trace('reveal answer 6');
+    	if (evt.keyCode == 55)
+    		trace('reveal answer 7');
+    	if (evt.keyCode == 56)
+    		trace('reveal answer 8');
+	}
+		]]>
+	</mx:Script>
+	<mx:Text   id="txtNumber" width="0" text="[1]" visible="false" />
+	
+	<mx:Canvas width="{btnToggle.width}" height="{btnToggle.height}" backgroundColor="0x000000">
+		<mx:HBox horizontalGap="0" width="100%" height="100%" verticalAlign="middle" 
+			paddingLeft="3" paddingRight="3" paddingTop="2" paddingBottom="2">
+			<mx:Text   id="txtAnswer" click="{onButtonClick()}" width="100%" styleName="Answer" visible="false"  color="0xFFFFFF" />
+			<mx:Text   id="txtScore"  click="{onButtonClick()}" width="35" styleName="Answer" visible="false" color="0xFFFFFF" textAlign="right" />
+		</mx:HBox>
+	</mx:Canvas>
+	<mx:Canvas id="cvsCover"  x="0" width="{btnToggle.width}" height="{btnToggle.height}" backgroundColor="black">
+		<mx:Image id="btnToggle" click="{onButtonClick()}" source="assets/images/flippy-thing.png" />
+		<mx:Text id="flippyText" click="{onButtonClick()}" text="A" color="0x960a00" textAlign="center" width="100%" fontSize="18" fontWeight="bold" />
+		<!--<mx:Button id="btnToggle" label="A" click="{onButtonClick()}" width="100%" height="100%" cornerRadius="0"/>-->
+	</mx:Canvas>
+</mx:Canvas>
