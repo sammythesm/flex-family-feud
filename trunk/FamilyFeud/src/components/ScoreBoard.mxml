@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" styleName="ScoreBoard" verticalScrollPolicy="off" horizontalScrollPolicy="off">
+	<mx:Text id="txtScoreBoard" width="100%" height="100%" styleName="ScoreBoard" text="8888"  />
+</mx:Canvas>

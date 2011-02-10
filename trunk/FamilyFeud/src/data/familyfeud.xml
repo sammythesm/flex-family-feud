@@ -1,0 +1,918 @@
+<familyfeud>
+
+    <question value="Name something that would cause a cab driver to have a bad day">
+        <answer score="32" value="Getting robbed" />
+        <answer score="21" value="Auto Accident" />
+        <answer score="17" value="Got a ticket" />
+        <answer score="17" value="No fares" />
+        <answer score="13" value="Bad tips" />
+    </question>
+    
+    <question value="Double: Name something women might leave lipstick marks on">
+        <answer score="46" value="Face" />
+        <answer score="42" value="Letter" />
+        <answer score="34" value="Collar" />
+        <answer score="30" value="Cup" />
+        <answer score="28" value="Straw" />
+        <answer score="24" value="Pillow" />
+    </question>
+	
+	<question value="Triple: Name a temple you would like to be married in.">
+        <answer score="105" value="Salt Lake" />
+        <answer score="42" value="Logan" />
+        <answer score="34" value="St. George" />
+		<answer score="29" value="San Diego" />
+		<answer score="26" value="Washington DC" />
+		<answer score="26" value="Oakland" />
+		<answer score="20" value="London" />
+		<answer score="18" value="Hawaii" />
+    </question>
+	
+	<question value="Tell me something specific you have lost more than once">
+        <answer score="63" value="Keys" />
+        <answer score="7" value="Money" />
+        <answer score="5" value="Weight" />
+        <answer score="4" value="Contact Lens" />
+        <answer score="4" value="Eyeglasses" />
+		<answer score="3" value="Wallet" />
+		<answer score="2" value="Earrings" />
+    </question>
+	
+	<question value="Double: Name something a young woman puts in her hope chest">
+        <answer score="98" value="Linens" />
+        <answer score="30" value="China" />
+        <answer score="18" value="Clothes" />
+        <answer score="18" value="Silverware" />
+        <answer score="16" value="Quilt" />
+		<answer score="6" value="Diary" />
+		<answer score="4" value="Picture" />
+    </question>
+	
+	<question value="Triple: Name something you do when you get home from church.">
+        <answer score="108" value="Eat" />
+        <answer score="51" value="Change Clothes" />
+        <answer score="51" value="Nap" />
+        <answer score="45" value="Start Lunch/Dinner" />
+        <answer score="12" value="Take off shoes" />
+    </question>
+	
+	<question value="Name a kind of food that gets stuck between your teeth">
+        <answer score="37" value="Corn" />
+        <answer score="23" value="Meat" />
+        <answer score="22" value="Popcorn" />
+        <answer score="6" value="Caramel" />
+        <answer score="3" value="Nuts" />
+		<answer score="3" value="Peanut Butter" />
+		<answer score="2" value="Taffy" />
+    </question>
+	
+	<question value="Double: Name something the police do at the station to those who are arrested">
+        <answer score="112" value="Fingerprint them" />
+        <answer score="52" value="Book Them" />
+        <answer score="10" value="Question" />
+        <answer score="10" value="Mug Shot" />
+        <answer score="6" value="One Phone Call" />
+		<answer score="6" value="Put them in cell" />
+		<answer score="4" value="Read them their rights" />
+    </question>
+	
+	<question value="Triple: Name a Book of Mormon character">
+        <answer score="183" value="Nephi" />
+        <answer score="48" value="Moroni" />
+        <answer score="33" value="Alma" />
+        <answer score="15" value="Lehi" />
+        <answer score="9" value="Ammon" />
+		<answer score="9" value="Abinadi" />
+		<answer score="3" value="Mormon" />
+    </question>
+	
+	<question value="Name something you associate with Egypt">
+        <answer score="77" value="Pyramids" />
+        <answer score="7" value="Sphinx" />
+        <answer score="4" value="Camels" />
+        <answer score="3" value="Nile River" />
+        <answer score="3" value="Desert" />
+		<answer score="2" value="Cleopatra" />
+		<answer score="2" value="Pharaoh" />
+		<answer score="1" value="Mummies" />
+		
+    </question>
+	
+	<question value="Double: Name the smartest animal">
+        <answer score="58" value="Dog" />
+        <answer score="42" value="Monkey" />
+        <answer score="40" value="Dolphin" />
+        <answer score="36" value="Cat" />
+        <answer score="10" value="Fox" />
+		<answer score="8" value="Horse" />
+		<answer score="6" value="Parrot" />
+    </question>
+	
+	<question value="Triple: Name a popular church hymn.">
+        <answer score="57" value="The Spirit of God" />
+        <answer score="52" value="Because I Have Been Given Much" />
+        <answer score="44" value="I Stand All Amazed" />
+        <answer score="37" value="I Know That My Redeemer Lives" />
+        <answer score="30" value="We Thank Thee O God For a Prophet" />
+		<answer score="30" value="Come, Come Ye Saints" />
+		<answer score="29" value="How Great Thou Art" />
+		<answer score="21" value="I Am A Child of God" />
+	    </question>
+	
+	<question value="Name something new that you buy because you get sick of your old one">
+        <answer score="42" value="Car" />
+        <answer score="11" value="Coat" />
+        <answer score="11" value="Purse" />
+        <answer score="8" value="Dress" />
+        <answer score="5" value="Shoes" />
+		<answer score="3" value="Robe" />
+		<answer score="3" value="Nail Polish" />
+    </question>
+	
+	<question value="Double: Besides clothing, name something that has a pocket">
+        <answer score="72" value="Kangaroo" />
+        <answer score="46" value="Purse" />
+        <answer score="26" value="Pool Table" />
+        <answer score="20" value="Bread" />
+        <answer score="14" value="Car Door" />
+		<answer score="4" value="Diaper Bag" />
+		<answer score="4" value="Tool Belt" />
+    </question>
+	
+	<question value="Triple: Name something Lehi took into the wilderness">
+        <answer score="195" value="Family" />
+        <answer score="78" value="Tent" />
+        <answer score="21" value="Liahona" />
+        <answer score="6" value="Faith" />
+    </question>
+	
+	<question value="Besides a gift, name something that you give someone on their birthday">
+        <answer score="46" value="Card" />
+        <answer score="19" value="Kiss" />
+        <answer score="15" value="Cake" />
+        <answer score="6" value="Party" />
+        <answer score="3" value="Hug" />
+		<answer score="3" value="Spanking" />
+		<answer score="2" value="Call" />
+    </question>
+	
+	<question value="Double: Name a place someone would double park">
+        <answer score="100" value="Post Office" />
+        <answer score="28" value="Store" />
+        <answer score="18" value="Bank" />
+        <answer score="14" value="Hospital" />
+        <answer score="12" value="Airport" />
+		<answer score="10" value="Dry Cleaners" />
+		<answer score="10" value="School" />
+    </question>
+	
+	<question value="Triple: Name something specific Noah took with him on the ark">
+        <answer score="147" value="Two of every animal" />
+        <answer score="120" value="Family" />
+        <answer score="12" value="Food" />
+        <answer score="6" value="Lighted Stones" />
+        <answer score="6" value="Seeds" />
+		<answer score="3" value="Faith" />	
+		<answer score="3" value="Clothes" />	
+		<answer score="3" value="The Priesthood" />
+    </question>	
+	
+	
+	<question value="Name something you have checked before you buy a house">
+        <answer score="19" value="Plumbing" />
+        <answer score="17" value="Roof" />
+        <answer score="16" value="Cost" />
+        <answer score="14" value="Termites" />
+        <answer score="13" value="Neighborhood" />
+		<answer score="10" value="Furnace" />
+		<answer score="7" value="Title" />
+		<answer score="4" value="Wiring" />
+    </question>
+	
+	<question value="Double: Name something people do to entertain a baby">
+        <answer score="84" value="Sing" />
+        <answer score="46" value="Make Faces" />
+        <answer score="34" value="Play With It" />
+        <answer score="12" value="Rock It" />
+        <answer score="10" value="Shake A Rattle" />
+		<answer score="6" value="Bounce" />
+		<answer score="4" value="Tickle" />
+		<answer score="4" value="Peek A Boo" />
+    </question>
+	
+	<question value="Triple: Name a King in the Book Of Mormon">
+        <answer score="165" value="Benjamin" />
+        <answer score="66" value="Noah" />
+        <answer score="48" value="Lamoni" />
+        <answer score="21" value="Mosiah" />
+    </question>
+	
+	<question value="Name a specific occupation that seems more like play than work">
+        <answer score="46" value="Pro Athlete" />
+        <answer score="15" value="Lifeguard" />
+        <answer score="12" value="Actor" />
+        <answer score="8" value="TV Show Host" />
+        <answer score="6" value="Cruise Director" />
+		<answer score="6" value="Musician" />
+		<answer score="5" value="Sports Coach" />
+		<answer score="2" value="Travel Guide" />
+    </question>
+	
+	<question value="Double: Name something you don't do as much of in cold weather">
+        <answer score="52" value="Garden" />
+        <answer score="48" value="Swimming" />
+        <answer score="28" value="Walk" />
+        <answer score="18" value="Cookout" />
+        <answer score="10" value="Sunbathing" />
+		<answer score="8" value="Bicycling" />
+		<answer score="6" value="Picnic" />
+    </question>
+	
+	<question value="Triple: Name a refreshment served at firesides">
+        <answer score="171" value="Cookies" />
+        <answer score="66" value="Brownies" />
+        <answer score="39" value="Punch" />
+        <answer score="15" value="Ice Cream" />
+        <answer score="9" value="Cake" />
+    </question>
+	
+	<question value="Name an occupation whose workers deal mostly with strangers">
+        <answer score="33" value="Sales Clerk" />
+        <answer score="14" value="Police" />
+        <answer score="7" value="Flight Attendant" />
+        <answer score="6" value="Waiter" />
+        <answer score="5" value="Telephone Operator" />
+		<answer score="4" value="Hotel Clerk" />
+		<answer score="3" value="Banker" />
+		<answer score="3" value="Nurse" />
+    </question>
+	
+	<question value="Double: Name something people put oil on">
+        <answer score="104" value="Body" />
+        <answer score="60" value="Salad" />
+        <answer score="20" value="Frying Pan" />
+        <answer score="6" value="Door Hinges" />
+        <answer score="6" value="Hair" />
+		<answer score="4" value="Furniture" />
+    </question>
+	
+	<question value="Triple:Name something that is against the Word of Wisdom.">
+        <answer score="126" value="Tobacco/Cigarettes" />
+        <answer score="105" value="Alcohol" />
+        <answer score="48" value="Coffee/Tea" />
+        <answer score="21" value="Drugs" />
+    </question>
+	
+	<question value="Past or present, name a city with a reputation for sinfulness">
+        <answer score="24" value="Las Vegas" />
+        <answer score="19" value="Sodom" />
+        <answer score="13" value="New Orleans" />
+        <answer score="10" value="New York City" />
+        <answer score="8" value="San Fransisco" />
+		<answer score="5" value="Rome" />
+    </question>
+	
+	<question value="Double:Name a food you wouldn't or couldn't eat with your fingers">
+        <answer score="68" value="Spaghetti" />
+        <answer score="46" value="Soup" />
+        <answer score="26" value="Mashed Potatoes" />
+        <answer score="20" value="Ice Cream" />
+        <answer score="16" value="Pudding" />
+		<answer score="14" value="Peas" />
+		<answer score="10" value="Steak" />
+    </question>
+	
+	<question value="Triple: Name something that small children do during Sacrament Meeting.">
+        <answer score="112" value="Color" />
+        <answer score="75" value="Cry" />
+        <answer score="30" value="Eat" />
+        <answer score="27" value="Read" />
+        <answer score="24" value="Sleep" />
+		<answer score="21" value="Disrupt/Make Noise" />
+		<answer score="11" value="Wiggle" />
+    </question>
+	
+	<question value="Name the kind of place that usually has the longest lines">
+        <answer score="23" value="Amusement Park" />
+        <answer score="18" value="Grocery Store" />
+        <answer score="16" value="Movie" />
+        <answer score="14" value="Bank" />
+        <answer score="7" value="Post Office" />
+		<answer score="5" value="Sports Game" />
+		<answer score="5" value="Restaurant" />
+		<answer score="2" value="Airport" />
+    </question>
+	
+	<question value="Double: Name an occupation in which you might be required to ride a horse">
+        <answer score="76" value="Jockey" />
+        <answer score="74" value="Police" />
+        <answer score="30" value="Cowboy" />
+        <answer score="6" value="Forest Ranger" />
+        <answer score="6" value="Horse Trainer" />
+    </question>
+	
+	<question value="Triple: Name something that Mormons do on a Sunday afternoon">
+        <answer score="189" value="Sleep/Nap" />
+        <answer score="30" value="Read/ Read Scriptures" />
+        <answer score="24" value="Visit Family" />
+        <answer score="18" value="Have Family Dinner" />
+        <answer score="12" value="Play games" />
+		<answer score="9" value="Visit the sick" />
+		<answer score="9" value="Choir Practice" />
+		<answer score="9" value="Watch church videos" />
+    </question>
+	
+	<question value="Name something you'd cry over losing">
+        <answer score="41" value="Wedding Ring" />
+        <answer score="22" value="Loved One" />
+        <answer score="9" value="Pet" />
+        <answer score="7" value="Wallet" />
+        <answer score="4" value="Home" />
+		<answer score="4" value="Job" />
+		<answer score="3" value="Purse" />
+    </question>
+	
+	<question value="Double: Name something that there never seems to be enough at your house">
+        <answer score="90" value="Money" />
+        <answer score="52" value="Food" />
+        <answer score="8" value="Soft Drinks" />
+        <answer score="8" value="Time" />
+        <answer score="8" value="Toilet Paper" />
+    </question>
+	
+	<question value="Triple: Name a food storage item.">
+        <answer score="198" value="Wheat" />
+        <answer score="23" value="Flour" />
+        <answer score="20" value="Potato Pearls" />
+        <answer score="18" value="Peanut Butter" />
+        <answer score="17" value="Rice" />
+		<answer score="9" value="Water" />
+		<answer score="9" value="Powdered Milk" />
+		<answer score="6" value="Sugar" />
+    </question>
+	
+	<question value="Name a state with two words in its name">
+        <answer score="46" value="New York" />
+        <answer score="11" value="North Carolina" />
+        <answer score="11" value="Rhode Island" />
+        <answer score="10" value="New Mexico" />
+        <answer score="9" value="New Jersey" />
+		<answer score="6" value="West Virginia" />
+		<answer score="5" value="North Dakota" />
+		<answer score="2" value="South Carolina" />
+				
+    </question>
+	
+	<question value="Double: Name something that's hardest to do the first time you try it">
+        <answer score="48" value="Ride a Bicycle" />
+        <answer score="42" value="Ski" />
+        <answer score="36" value="Drive" />
+        <answer score="14" value="Skate" />
+        <answer score="12" value="Swim" />
+    </question>
+	
+	<question value="Triple: Name a talent displayed in Sacrament Meeting">
+        <answer score="123" value="Singing" />
+        <answer score="123" value="Play Instrument" />
+        <answer score="39" value="Speaking" />
+        <answer score="15" value="Conduct Music" />
+      </question>
+	
+	<question value="Name something women find hard to resist">
+        <answer score="27" value="Shopping" />
+        <answer score="20" value="Candy" />
+        <answer score="17" value="Men" />
+        <answer score="13" value="Jewelry" />
+        <answer score="10" value="Clothes" />
+		<answer score="2" value="Gossip" />
+		<answer score="2" value="Money" />
+    </question>
+	
+	<question value="Double:Name an animal that likes to poke around in your garbage late at night">
+        <answer score="76" value="Raccoon" />
+        <answer score="46" value="Dog" />
+        <answer score="38" value="Cat" />
+        <answer score="22" value="Possum" />
+        <answer score="10" value="Skunk" />
+    </question>
+	
+	<question value="Triple: Name a popular primary song.">
+        <answer score="114" value="" />
+        <answer score="51" value="" />
+        <answer score="30" value="" />
+        <answer score="30" value="" />
+        <answer score="28" value="" />
+		<answer score="16" value="" />
+		<answer score="16" value="" />
+		<answer score="15" value="" />
+    </question>
+	
+	<question value="Name something people run out of">
+        <answer score="26" value="Milk" />
+        <answer score="22" value="Money" />
+        <answer score="16" value="Gas" />
+        <answer score="11" value="Sugar" />
+        <answer score="10" value="Toilet Paper" />
+		<answer score="3" value="Energy" />
+		<answer score="3" value="Patience" />
+    </question>
+	
+	<question value="Double: Tell us something a mother says to her child over and over again">
+        <answer score="60" value="No" />
+        <answer score="30" value="Don't" />
+        <answer score="20" value="I Love You" />
+        <answer score="16" value="Be Quiet" />
+        <answer score="14" value="Clean Your Room" />
+		<answer score="14" value="Don't Touch" />
+		<answer score="6" value="Brush your teeth" />
+		<answer score="4" value="Wash your hands" />
+    </question>
+	
+	<question value="Triple: Name something you DON'T do on Sunday">
+        <answer score="192" value="Shopping" />
+        <answer score="48" value="Go To Movies" />
+        <answer score="33" value="Work" />
+        <answer score="9" value="Play/Go out with friends" />
+        <answer score="9" value="Watch TV" />
+		<answer score="9" value="Go Out To Eat" />
+    </question>
+	
+	<question value="Name something in the house that is very difficult to move">
+        <answer score="42" value="Refrigerator" />
+        <answer score="14" value="Piano" />
+        <answer score="12" value="Couch" />
+        <answer score="9" value="Bed" />
+        <answer score="5" value="Dresser" />
+		<answer score="5" value="TV" />
+		<answer score="3" value="Stove" />
+    </question>
+	
+	<question value="Double: Name a place where you see nervous people">
+        <answer score="68" value="Dentist's Office" />
+        <answer score="40" value="Hospital" />
+        <answer score="36" value="Doctor" />
+        <answer score="14" value="Court" />
+        <answer score="12" value="IRS Office" />
+		<answer score="6" value="Wedding" />
+		<answer score="4" value="Airport" />
+		<answer score="4" value="Job Interview" />
+    </question>
+	
+	<question value="Triple: Name something that you do before you go to bed each night.">
+        <answer score="162" value="Pray" />
+        <answer score="64" value="Brush Teeth" />
+        <answer score="27" value="Read Scriptures" />
+        <answer score="9" value="Go to Bathroom" />
+        <answer score="6" value="Watch TV" />
+		<answer score="6" value="Write in Journal" />
+		<answer score="6" value="Wash Face" />
+    </question>
+	
+	<question value="What does a really hip boss give his secretary on secretarys day?">
+        <answer score="38" value="Flowers" />
+        <answer score="21" value="Day Off" />
+        <answer score="19" value="Money" />
+        <answer score="10" value="Theater Tickets" />
+        <answer score="4" value="Candy" />
+		<answer score="4" value="Lunch" />
+		<answer score="4" value="Perfume" />
+    </question>
+	
+	<question value="Double: Besides King and Queen name a title some people have in England">
+        <answer score="64" value="Prince" />
+        <answer score="46" value="Duke" />
+        <answer score="34" value="Princess" />
+        <answer score="22" value="Lord" />
+        <answer score="18" value="Duchess" />
+		<answer score="8" value="Sir" />
+		<answer score="2" value="Earl" />
+		<answer score="2" value="Lady" />
+    </question>
+	
+	<question value="Triple: Name a church magazine. ">
+        <answer score="150" value="Ensign" />
+        <answer score="87" value="New Era" />
+        <answer score="48" value="Friend" />
+        <answer score="15" value="Liahona" />
+    </question>
+	
+	<question value="Name something that easy to do forwards, but hard backwards">
+        <answer score="24" value="Walk" />
+        <answer score="19" value="Run" />
+        <answer score="14" value="Drive" />
+        <answer score="11" value="Write" />
+        <answer score="10" value="Skate" />
+		<answer score="9" value="Ride Bike" />
+		<answer score="4" value="Talk" />
+    </question>
+	
+	<question value="Double: Name an ingredient in meat loaf, besides meat">
+        <answer score="50" value="Eggs" />
+        <answer score="46" value="Bread Crumbs" />
+        <answer score="46" value="Onion" />
+        <answer score="18" value="Tomato" />
+        <answer score="12" value="Ketchup" />
+		<answer score="10" value="Oatmeal" />
+		<answer score="8" value="Green Pepper" />
+		<answer score="4" value="Milk" />
+    </question>
+	
+	<question value="Triple: Name a miracle performed by Jesus Christ.">
+        <answer score="105" value="Healing" />
+        <answer score="75" value="Raised the Dead" />
+        <answer score="48" value="Turned water into wine" />
+        <answer score="45" value="Fed the 5000" />
+        <answer score="27" value="Walked on water" />
+    </question>
+	
+	<question value="Name something measured by the spoonful">
+        <answer score="55" value="Sugar" />
+        <answer score="27" value="Medicine" />
+        <answer score="8" value="Salt" />
+        <answer score="4" value="Cocoa" />
+        <answer score="2" value="Baking Soda" />
+		<answer score="2" value="Vanilla" />
+    </question>
+	
+	<question value="Double:Name something little girls pretend to be">
+        <answer score="51" value="Mommies" />
+        <answer score="13" value="Princesses" />
+        <answer score="11" value="Nurses" />
+        <answer score="8" value="Teachers" />
+        <answer score="7" value="Brides" />
+		<answer score="4" value="Actresses" />
+		<answer score="3" value="Ballerinas" />
+    </question>
+	
+	<question value="Triple: Name something children do in Primary">
+        <answer score="252" value="Sing" />
+        <answer score="21" value="Sharing Time" />
+        <answer score="18" value="Color" />
+        <answer score="9" value="Learn" />
+    </question>
+	
+	<question value="Name something you'd take with you for an afternoon in the park">
+        <answer score="36" value="Picnic" />
+        <answer score="21" value="Blanket" />
+        <answer score="17" value="Book" />
+        <answer score="8" value="Radio" />
+        <answer score="4" value="Frisbee" />
+		<answer score="3" value="Sunglasses" />
+		<answer score="2" value="Camera" />
+		<answer score="2" value="Chair" />
+    </question>
+	
+	<question value="Double: Name a big animal with a short tail">
+        <answer score="78" value="Elephant" />
+        <answer score="48" value="Bear" />
+        <answer score="24" value="Giraffe" />
+        <answer score="18" value="Pig" />
+        <answer score="12" value="Hippo" />
+		<answer score="8" value="Deer" />
+		<answer score="4" value="Camel" />
+		<answer score="4" value="Elk" />
+    </question>
+	
+	<question value="Triple: Name an event that happens in your life that your friends and family might travel a long distance to attend.">
+        <answer score="207" value="Wedding" />
+        <answer score="24" value="Baptism" />
+        <answer score="21" value="Family Reunion" />
+        <answer score="21" value="Funeral" />
+        <answer score="15" value="Baby Blessing" />
+		<answer score="12" value="Graduation" />
+    </question>
+	
+	<question value="Name something you'd wear even if it has a hole in it ">
+        <answer score="35" value="Socks" />
+        <answer score="22" value="Jeans" />
+        <answer score="19" value="Underwear" />
+        <answer score="8" value="Shoes" />
+        <answer score="6" value="Sweater" />
+		<answer score="4" value="T-Shirt" />
+		<answer score="3" value="Sweatshirt" />
+    </question>
+	
+	<question value="Double: Name something that melts easily">
+        <answer score="72" value="Butter" />
+        <answer score="58" value="Ice Cream" />
+        <answer score="28" value="Ice" />
+        <answer score="16" value="Cheese" />
+        <answer score="16" value="Chocolate" />
+		<answer score="6" value="Snow" />
+		<answer score="4" value="Wax" />
+    </question>
+	
+	<question value="Triple: Name a Temple in Utah">
+        <answer score="102" value="Salt Lake" />
+        <answer score="36" value="Manti" />
+        <answer score="36" value="St. George" />
+        <answer score="33" value="Provo" />
+        <answer score="33" value="Logan" />
+		<answer score="30" value="Jordan River" />
+		<answer score="30" value="Bountiful" />
+    </question>
+	
+	<question value="Name a food that you boil in a big pot">
+        <answer score="28" value="Pasta" />
+        <answer score="20" value="Soup" />
+        <answer score="13" value="Potatoes" />
+        <answer score="7" value="Chicken" />
+        <answer score="7" value="Corn" />
+		<answer score="6" value="Lobster" />
+		<answer score="5" value="Stew" />
+    </question>
+	
+	<question value="Double: Name an occupation whose workers should know CPR ">
+        <answer score="48" value="Paramedic" />
+        <answer score="40" value="Nurse" />
+        <answer score="32" value="Firefighter" />
+        <answer score="24" value="Ambulance Driver" />
+        <answer score="24" value="Lifeguard" />
+		<answer score="6" value="Babysitter" />
+		<answer score="6" value="Police" />
+	</question>
+	
+	<question value="Triple: Name a way people hear about the gospel.">
+        <answer score="177" value="Missionaries" />
+        <answer score="78" value="Friends" />
+        <answer score="39" value="Commercials" />
+        <answer score="6" value="Member's Examples" />
+    </question>
+	
+	<question value="Name the coldest room in the house">
+        <answer score="34" value="Bedroom" />
+        <answer score="33" value="Bathroom" />
+        <answer score="14" value="Basement" />
+        <answer score="8" value="Living Room" />
+        <answer score="3" value="Dining Room" />
+		<answer score="2" value="Garage" />
+    </question>
+	
+	<question value="Double: Besides candy name something that might have a chocolate covering">
+        <answer score="46" value="Cake" />
+        <answer score="40" value="Ice Cream" />
+        <answer score="28" value="Cookies" />
+        <answer score="22" value="Nuts" />
+        <answer score="18" value="Raisins" />
+		<answer score="14" value="Pretzels" />
+		<answer score="10" value="Cherries" />
+		<answer score="8" value="Donuts" />
+    </question>
+	
+	<question value="Triple: Name Items in an 72 hr.Emergency Kit">
+        <answer score="150" value="Water" />
+        <answer score="75" value="Food" />
+        <answer score="34" value="Radio" />
+        <answer score="26" value="Medicine" />
+        <answer score="15" value="Matches" />
+    </question>
+	
+	<question value="Name something people often say to each other but really don't mean">
+        <answer score="24" value="Have a Nice Day" />
+        <answer score="24" value="How Are You" />
+        <answer score="16" value="I Love You" />
+        <answer score="13" value="You Look Great" />
+        <answer score="5" value="I'm Fine" />
+		<answer score="4" value="I'm Sorry" />
+		<answer score="3" value="Come See Me" />
+		<answer score="2" value="I'll Call" />
+    </question>
+	
+	<question value="Double: Name a fast food main dish besides hamburger">
+        <answer score="116" value="Chicken" />
+        <answer score="26" value="Burrito" />
+        <answer score="22" value="Pizza" />
+        <answer score="14" value="Hot Dog" />
+        <answer score="14" value="Taco" />
+		<answer score="4" value="Roast Beef" />
+		<answer score="4" value="Salad Bar" />
+    </question>
+   
+	
+	<question value="Triple: Besides Brigham Young, name a famous pioneer. ">
+        <answer score="130" value="Parley P. Pratt " />
+        <answer score="115" value="Edward Martin" />
+        <answer score="20" value="Porter Rockwell" />
+        <answer score="20" value="Eliza R. Snow " />
+        <answer score="15" value="Ephraim Hanks" />
+    </question>
+	
+	<question value="Name a dish that feeds a lot of people on a little money">
+        <answer score="58" value="Pasta" />
+        <answer score="9" value="Rice" />
+        <answer score="8" value="Chili" />
+        <answer score="8" value="Casserole" />
+        <answer score="6" value="Soup" />
+		<answer score="3" value="Potatoes" />
+		<answer score="2" value="Meat Loaf" />
+		<answer score="2" value="Stew" />
+    </question>
+	
+	<question value="Double: Name something a bride always gets several of at a shower">
+        <answer score="64" value="Toaster" />
+        <answer score="40" value="Towels" />
+        <answer score="40" value="Sheets" />
+        <answer score="10" value="Dishes" />
+        <answer score="8" value="Can Opener" />
+		<answer score="8" value="Glasses" />
+		<answer score="6" value="Blender" />
+		<answer score="4" value="Iron" />
+    </question>
+	
+	<question value="Triple: Name a Family History Website you can use from home. ">
+        <answer score="156" value="Familysearch.org " />
+        <answer score="47" value="Ancestry.com" />
+        <answer score="41" value="LDS.org " />
+        <answer score="38" value="Usgenweb  " />
+        <answer score="12" value="Rootsweb  " />
+		<answer score="6" value="Cyndis list" />
+    </question>
+	
+	<question value="Name something people carry in their hands as they board airplanes">
+        <answer score="49" value="Ticket" />
+        <answer score="25" value="Carry On" />
+        <answer score="10" value="Book" />
+        <answer score="5" value="Camera" />
+        <answer score="5" value="Purse" />
+		<answer score="3" value="Children" />
+		<answer score="2" value="Coat" />
+    </question>
+	
+	<question value="Double:Name an activity that's so boring it makes you sleepy">
+        <answer score="46" value="Reading" />
+        <answer score="38" value="Watching TV" />
+        <answer score="28" value="Watching Sports" />
+        <answer score="20" value="Lecture" />
+        <answer score="18" value="Studying" />
+		<answer score="12" value="Driving" />
+		<answer score="6" value="Sunbathing" />
+    </question>
+	
+	<question value="Triple: Name something forbidden by the Ten Commandments.">
+        <answer score="125" value="Murder" />
+        <answer score="50" value="Taking Lords name in vain" />
+        <answer score="50" value="Lying" />
+        <answer score="30" value="Idol worship" />
+        <answer score="20" value="Adultery" />
+		<answer score="10" value="Theft" />
+		<answer score="10" value="Coveting" />
+		<answer score="5" value="Violating the Sabbath" />
+    </question>
+	
+	<question value="Name a place where people slip off their shoes">
+        <answer score="49" value="Home" />
+        <answer score="19" value="Movie" />
+        <answer score="6" value="Japanese Restaurant" />
+        <answer score="6" value="Work" />
+        <answer score="5" value="Car" />
+		<answer score="4" value="Beach" />
+    </question>
+	
+	<question value="Double:Name something people get paid to do that mothers do for nothing">
+        <answer score="66" value="Cook" />
+        <answer score="60" value="Clean" />
+        <answer score="50" value="Baby Sit" />
+        <answer score="14" value="Wash Dishes" />
+        <answer score="8" value="LAUNDRY" />
+    </question>
+	
+	<question value="Triple: How many generations are listed on a Pedigree Chart?">
+        <answer score="175" value="Four" />
+        <answer score="75" value="Five" />
+        <answer score="35" value="Six" />
+        <answer score="15" value="Three" />
+    </question>
+	
+	<question value="Name something people give to celebrities to autograph">
+        <answer score="34" value="Napkin" />
+        <answer score="16" value="Photo" />
+        <answer score="14" value="Program" />
+        <answer score="10" value="Blank Paper" />
+        <answer score="6" value="Book" />
+		<answer score="4" value="Album" />
+		<answer score="4" value="Menu" />
+		<answer score="" value="Baseball" />
+    </question>
+	
+	<question value="Double: Name something that can give you blisters">
+        <answer score="78" value="Shoes" />
+        <answer score="68" value="Gardening" />
+        <answer score="14" value="Shoveling" />
+        <answer score="12" value="Fire" />
+        <answer score="10" value="Sweeping" />
+		<answer score="4" value="Running" />
+		<answer score="4" value="Sunburn" />
+		<answer score="2" value="Racket or Golf Club" />
+    </question>
+	
+	<question value="Triple: Name an early Mormon settlement.">
+        <answer score="138" value="Nauvoo" />
+        <answer score="66" value="Kirkland" />
+        <answer score="33" value="Winter Quarters" />
+        <answer score="24" value="Far West" />
+        <answer score="18" value="Salt Lake City" />
+		<answer score="12" value="Saint George" />
+		<answer score="9" value="Council Bluff" />
+    </question>
+	
+	<question value="Name a city that comes to mind when you think of spy movies">
+        <answer score="33" value="London" />
+        <answer score="19" value="Paris" />
+        <answer score="12" value="New York City" />
+        <answer score="6" value="Moscow" />
+        <answer score="6" value="Washington DC" />
+		<answer score="5" value="Berlin" />
+		<answer score="3" value="Rome" />
+		<answer score="3" value="San Fransisco" />
+    </question>
+	
+	<question value="Double:Name a sound that has always frightened you">
+        <answer score="74" value="Thunder" />
+        <answer score="32" value="Siren" />
+        <answer score="14" value="Gunshot" />
+        <answer score="14" value="Scream" />
+        <answer score="10" value="Howl" />
+		<answer score="8" value="Tire Screech" />
+		<answer score="6" value="Dentist Drill" />
+		<answer score="6" value="Car Backfire" />
+    </question>
+	
+	<question value="Triple: What does the world need more of?">
+        <answer score="130" value="Faith" />
+        <answer score="60" value="Compassion" />
+        <answer score="60" value="Patience" />
+        <answer score="25" value="Desire to Serve" />
+        <answer score="25" value="Kindness" />
+    </question>
+	
+	<question value="Name a food you buy more than one of at a time">
+        <answer score="24" value="Potatoes" />
+        <answer score="22" value="Eggs" />
+        <answer score="10" value="Apples" />
+        <answer score="10" value="Bananas" />
+        <answer score="7" value="Grapes" />
+		<answer score="5" value="Hot dogs" />
+		<answer score="2" value="Sodas" />
+		<answer score="2" value="Chips" />
+    </question>
+	
+	<question value="Double:Name something in your house you'd be able to find even in the dark">
+        <answer score="58" value="Bathroom" />
+        <answer score="54" value="Lamp" />
+        <answer score="26" value="Bed" />
+        <answer score="10" value="Clock" />
+        <answer score="10" value="Spouse" />
+		<answer score="8" value="Couch" />
+		<answer score="8" value="Fridge" />
+		<answer score="6" value="TV" />
+    </question>
+	
+	<question value="Triple:  If Jesus walked the earth today what job would he have?">
+        <answer score="100" value="Construction" />
+        <answer score="90" value="Chick Fil A" />
+        <answer score="25" value="Work with Special Needs Children" />
+        <answer score="25" value="Service" />
+        <answer score="20" value="Homeless Shelter" />
+		<answer score="20" value="Farmer" />
+		<answer score="10" value="Sheep Owner" />
+		<answer score="10" value="Inn Keeper" />
+    </question>
+	
+	<question value="
+Name something boy scouts are famous for">
+        <answer score="38" value="Good Deeds" />
+        <answer score="29" value="Camping" />
+        <answer score="5" value="Tying Knots" />
+        <answer score="4" value="Being Prepared" />
+        <answer score="4" value="Scouts honor" />
+		<answer score="3" value="Honesty" />
+		<answer score="3" value="Loyalty" />
+		<answer score="2" value="Merit Badges" />
+    </question>
+	
+	<question value="Double:Name a kind of candy that comes in different colors">
+        <answer score="46" value="Lifesavers" />
+        <answer score="46" value="M and Ms" />
+        <answer score="36" value="Taffy" />
+        <answer score="18" value="Jellybeans" />
+        <answer score="14" value="Lollipops" />
+		<answer score="6" value="Mints" />
+		<answer score="6" value="Skittles" />
+		<answer score="6" value="Starburst" />
+    </question>
+	
+	<question value="Triple: Name a scriptural character that exhibited great humility.">
+        <answer score="78" value="Christ" />
+        <answer score="72" value="Job" />
+        <answer score="39" value="King Benjamin" />
+        <answer score="30" value="Abraham" />
+        <answer score="24" value="Enos" />
+		<answer score="24" value="Moses" />
+		<answer score="18" value="Daniel" />
+		<answer score="15" value="Alma" />
+    </question>
+	
+	    
+</familyfeud> 
+	
+	

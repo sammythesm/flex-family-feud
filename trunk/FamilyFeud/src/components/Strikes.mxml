@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" >
+	<mx:Script>
+		<![CDATA[
+			import mx.managers.PopUpManager;
+			
+			static private var pu:Strikes;
+			
+			static public function showStrikes( parent:DisplayObject, nCnt_:int ):void{
+				pu = PopUpManager.createPopUp( parent, Strikes, true ) as Strikes;
+				pu.setStrikes( nCnt_ );
+				PopUpManager.centerPopUp( pu ); 	
+				
+				var timer:Timer = new Timer( 1000, 1 );
+				timer.addEventListener(TimerEvent.TIMER, timerHandler );
+				timer.start();
+			}
+				
+			static private function timerHandler(e:TimerEvent):void{
+				PopUpManager.removePopUp( pu );
+			}
+			
+			private function setStrikes( nCnt_:int ):void{
+				if( this.getChildren().length )
+					this.removeAllChildren();
+				if( 3<nCnt_ )
+					nCnt_ = 3;
+				for( var i:int; i<nCnt_; i++ ){
+					this.addChild( new Strike );
+				}
+			}
+		]]>
+	</mx:Script>
+</mx:HBox>
